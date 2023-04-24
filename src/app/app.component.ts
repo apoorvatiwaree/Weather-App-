@@ -30,13 +30,13 @@ export class AppComponent {
     this.city = '';
     this.weather = null;
     this.errorMessage = '';
-    this.backgroundImage = '';
+    this.backgroundImage = 'url("../assets/images/default-bg.jpg")';
   }
 
   onSubmit() {
     this.weatherService.getWeather(this.city).subscribe(
       (data) => {
-        this.temperature = data.main.temp - 273;
+        this.temperature = Math.floor(data.main.temp - 273);
         this.description = data.weather[0].description;
         this.icon = data.weather[0].icon;
         this.errorMessage = '';

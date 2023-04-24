@@ -1,10 +1,9 @@
 <div class="container" >
-  <img src="/weather-app/assets/images/default-bg.jpg" sizes="100 100 100 100">
   <h1 class="title">Weather App</h1>
 
   <div class="form-container">
     <form (ngSubmit)="onSubmit()" class="form">
-      <input type="text" [(ngModel)]="city" name="city" placeholder="Enter city name">
+      <input class = "input" type="text" [(ngModel)]="city" name="city" placeholder="Enter city name">
       <button type="submit" class="btn">Get Weather</button>
     </form>
 
