@@ -1,8 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule, Routes } from '@angular/router'; // Import the router module and routes
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+const routes: Routes = [ // Define your routes
+  { path: '', redirectTo: '/weather', pathMatch: 'full' },
+  { path: 'weather', component: AppComponent }
+];
 
 @NgModule({
   declarations: [
@@ -10,7 +17,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule,
+    RouterModule.forRoot(routes) // Add the router module and routes to your imports
   ],
   providers: [],
   bootstrap: [AppComponent]

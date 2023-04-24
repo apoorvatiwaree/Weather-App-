@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #fe84b7;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  background-color: #fe84b7;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-image: url('/weather-app/src/assets/images/snowy-bg.jpg') no-repeat center center fixed;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #23c11a;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-color: #000;
+}
+
+.input {
+  border:#45a049;
+  border-width: 10ch;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 0.5rem 0 0 0.5rem;
+
+}
+
+.btn {
+  border: none;
+  background-color: #34c6eb;
+  color: #df8b8b;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0.5rem 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #2ba2be;
+}
+
+.temperature {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+
+  
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: #fe84b7;
+    text-shadow: 2px 2px #000000;
+    
+  }
+  
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  
+  
+  button[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .weather {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(121, 14, 14, 0.8);
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+  }
+  
+  .weather img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .weather p {
+    text-align: center;
+    font-size: 28px;
+    color: #333333;
+  }
+  
+  .sunny {
+    background-image: url('/weather-app/assets/images/sunny-bg.jpg');
+  }
+  
+  .cloudy {
+    background-image: url('/weather-app/assets/images/cloudy-bg.jpg');
+  }
+  
+  .rainy {
+    background-image: url('/weather-app/assets/images/rainy-bg.jpg');
+  }
+  
+  .snowy {
+    background-image: url('/weather-app/assets/images/snowy-bg.jpg');
+  }
+  
+  
+  
+  
+
+ 
+  
+  .weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(239, 233, 233);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  
+  .weather h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  
+  .weather h2 {
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  
+  .weather input {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .weather button {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(35, 210, 155);
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .weather button:hover {
+    background-color: #333;
+    color: rgb(202, 219, 17);
+  }
+  
